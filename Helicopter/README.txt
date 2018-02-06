@@ -1,0 +1,1 @@
+init fila som ligger i common files må ligge i samme mappene som de seperate initene i partX mappen.
