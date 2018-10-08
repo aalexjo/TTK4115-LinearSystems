@@ -1,0 +1,83 @@
+\appendix\section{Nomenclature}\label{sec:nomenclature}
+
+
+%% CONSTANTS
+\begin{table}[h!]
+	\centering
+	\caption{Parameters and values.}
+	\begin{tabular}{llll}
+		\toprule
+		Symbol & Parameter & Value & Unit \\
+		\midrule
+	    $e^\ast$    & Linearization point, elevation angle            & $0$     & \rad                        \\
+		$F_{g,b}$   & Gravitational force, back motor                 & $7.063$ & \newton                     \\
+		$F_{g,c}$   & Gravitational force, counterweight              & $18.84$ & \newton                     \\
+		$F_{g,f}$   & Gravitational force, front motor                & $7.063$ & \newton                     \\
+		$g$         & Gravitational acceleration                      & $9.81$  & \meter\per\second\squared   \\
+		$J_e$       & Moment of inertia for elevation                 & $1.036$ & \kilogram\usk\meter\squared \\
+		$J_\lambda$ & Moment of inertia for travel                    & $1.078$ & \kilogram\usk\meter\squared \\
+		$J_p$       & Moment of inertia for pitch                     & $0.044$ & \kilogram\usk\meter\squared \\
+		$K_f$       & Motor force constant                            & $0.149$ & \newton\per\volt            \\
+		$l_{c}$     & Distance from elevation axis to counterweight   & $0.46$  & \meter                      \\
+		$l_{h}$     & Distance from elevation axis to helicopter head & $0.66$  & \meter                      \\
+		$l_{p}$     & Distance from pitch axis to motor               & $0.175$ & \meter                      \\
+%		$m_h$       & Mass of helicopter                              & $1.05$  & \kilogram                   \\
+		$m_{p}$     & Motor mass                                      & $0.72$  & \kilogram                   \\
+  		$m_{c}$     & Counterweight mass                              & $1.92$  & \kilogram                   \\
+  		$p^\ast$    & Linearization point, pitch angle                & $0$     & \rad                        \\
+  		$V_d^\ast$  & Linearization point, voltage difference         & $0$     & \volt                       \\
+  		$V_s^\ast$  & Linearization point, voltage sum                & $6.711$ & \volt                       \\
+  		$\lambda^\ast$    & Linearization point, travel angle         & $0$     & \rad                        \\
+		\bottomrule
+	\end{tabular}
+\label{tab:constans}
+\end{table}
+
+%% VARIABLES AND OTHER PARAMETERS
+
+\begin{table}[h!]
+	\centering
+	\caption{Parameters and values.}
+	\begin{tabular}{lll}
+		\toprule
+		Symbol & Parameter & Unit \\
+		\midrule
+		$e$         & Elevation angle                                   & \rad                        \\
+		$\tilde{e}$ & Elevation angle, after coordination transform     & \rad                        \\
+		$\tilde{e}_c$ & Elevation angle reference                       & \rad                        \\
+		$F_b$       & Force from back propeller                         & \newton                     \\
+		$F_f$       & Force from front propeller                        & \newton                     \\
+		$J$         & Moment of inertia                                 & \kilogram\meter\squared     \\
+		$\bm{J}$    & Cost function for linear quadratic regulator      & $-$                         \\
+		$K_{pd}$    & Controller gain                                   & $-$                         \\
+		$K_{pp}$    & Controller gain                                   & $-$                         \\
+		$K_{rd}$    & Controller gain                                   & $-$                         \\
+		$\bm{K}$    & Gain matrix for linear quadratic regulator        & $-$                         \\
+		$\bm{L}$    & Gain matrix for linear observer                   & $-$                         \\
+		$M$         & Torque                                            & \newton\meter               \\
+		$p$         & Pitch angle                                       & \rad                        \\
+		$\tilde{p}$ & Pitch angle, after coordination transform         & \rad                        \\
+		$\tilde{p}_c$ & Pitch angle reference                           & \rad                        \\
+		$\bm{P}$    & Gain matrix                                       & $-$                         \\
+		$\bm{Q}$    & Weighting matrix for linear quadratic regulator   & $-$                         \\
+		$\bm{r}$    & Reference vector                                  & $-$                         \\
+		$\bm{R}$    & Weighting matrix for linear quadratic regulator   & $-$                         \\
+		$t$         & Time                                              & \second                     \\
+		$\bm{u}$    & Input vector                                      & $-$                         \\
+		$V_b$       & Voltage back motor                                & \volt                       \\
+		$V_d$       & Voltage difference                                & \volt                       \\
+		$\tilde{V}_d$     & Voltage difference, after coordinate transform  & \volt                       \\
+		$V_f$       & Voltage front motor                               & \volt                       \\
+		$V_s$       & Voltage sum                                       & \volt                       \\
+		$\tilde{V}_s$     & Voltage sum, after coordinate transform     & \volt                       \\
+		$\bm{x}$    & State vector                                      & $-$                         \\
+		$\bm{y}$    & Output vector                                     & $-$                         \\
+  		$\lambda$         & Travel angle                                & \rad                        \\
+		$\tilde{\lambda}$ & Travel angle, after coordination transform  & \rad                        \\
+		$\dot{\tilde{\lambda}}_c$ & Elevation rate reference            & \rad\per\second             \\
+		
+		\bottomrule
+	\end{tabular}
+\label{tab:parameters}
+\end{table}
+

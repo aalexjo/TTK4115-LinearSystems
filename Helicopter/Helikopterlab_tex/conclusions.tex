@@ -1,0 +1,6 @@
+\section{Conclusions}
+In this assignment we have tried different controllers on the same system. The system works best around the equilibrium, which is as expected as the linear model simplifies the system, and ignores the effect caused by the pitch and elevation angles.\medskip
+
+In the first part, the system was controlled using feed-forward. This didn't work well. The second task uses monovariable controllers, which work fine. The downside here is that we need a separate controller for each state. This means a lot of tuning, and work.\medskip
+
+The multivariable controllers, using LQR, controlled all states with one common controller. This meant that tuning was easier, and the results better. We did however need two additional states, the integral effects, for it to work best. We used these two controllers together with an estimator. The estimator poles had to be placed in the correct area. When placed here, it could estimate the system while providing a low pass filtered signal for our controllers. This improved the system behaviour. The estimator requires the system to be observable, but as we saw in the last section, this doesn't guarantee a system that can be nicely controlled. Differentiating a measurement gives a lot of noise, and we tried to differentiate our measurement twice in our estimator. Therefor the last part was hard to control. 

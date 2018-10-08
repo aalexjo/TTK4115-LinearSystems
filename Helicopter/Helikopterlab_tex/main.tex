@@ -1,0 +1,53 @@
+\documentclass{article}
+
+\usepackage{kyblab}
+\usepackage{tabstackengine}
+\stackMath
+\newcommand{\bm}[1]{\boldsymbol{\mathrm{#1}}}
+\setlength\parindent{0pt}
+\usepackage{marvosym}
+\usepackage{color}
+\usepackage{float}
+
+\title{%
+    Helicopter control using linear control theory \\ \medskip
+    \large{Helicopter lab for TTK4115 at NTNU}}
+
+\author{
+Alexander Johansen - 759059\\ 
+Lars C. M. van der Lee - 768644\\
+Åshild Lien - 768635\\
+Group 43}
+
+
+\date{October 2017}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\tableofcontents
+
+\newpage
+%\input{abstract.tex} % We drop this
+
+\input{introduction.tex}
+\input{theory.tex}
+\input{results.tex}
+\input{conclusions.tex}
+\clearpage
+\input{nomenclature.tex}
+\clearpage
+\input{matlab.tex}
+
+
+
+
+% References
+\newpage
+\addcontentsline{toc}{section}{References}
+\printbibliography{}
+\label{sec:bibliography}
+\end{document}
